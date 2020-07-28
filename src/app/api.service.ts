@@ -10,6 +10,7 @@ export class ApiService {
 
   getDateTimeAPI() {
     // Call the API and return the response (change the code below)
-    return this.http.get(this.url);
+    let res: Response;
+    return this.http.get(this.url).map((res: Response) => res.json());
   }
 }

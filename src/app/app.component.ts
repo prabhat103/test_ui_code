@@ -16,7 +16,7 @@ export class AppComponent {
   ngOnInit() {
     // assign API response to dateTimeObj on loading of application
     this.service.getDateTimeAPI().subscribe((result) => {
-      this.dateTimeObj = result.json();
+      this.dateTimeObj = result;
     });
   }
 
